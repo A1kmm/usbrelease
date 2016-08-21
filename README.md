@@ -1,13 +1,16 @@
-=== Overview ===
+Overview
+========
 
 usbrelease is a simple tool for use on Linux to detach USB devices from their
 kernel driver, and to reattach them later. This is useful if you need to use
 the device from userspace, but you can't completely remove the kernel driver
 (for example, because you have several devices handled by the same driver).
 
-=== Installation ===
+Installation
+============
 
-==== Pre-requisites ====
+Pre-requisites
+--------------
 You need to have libusb1.0 installed (including development libraries and
 headers). You also need to have GNU make and a recent (>= 4.9.0) version of g++
 installed.
@@ -16,7 +19,8 @@ On Debian and Ubuntu distributions, you can install the required libraries with:
 
     sudo apt-get install build-essential libusb-1.0-0-dev
 
-==== Build and install ====
+Build and install
+-----------------
 
 You can install it as follows:
 
@@ -25,7 +29,8 @@ You can install it as follows:
     make
     sudo make install
 
-=== Usage ===
+Usage
+=====
 
 You firstly need to identify what device you want to detach in terms of the bus ID
 and address. Using lsusb may be helpful. You can use:
